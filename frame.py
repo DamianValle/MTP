@@ -33,7 +33,7 @@ def b3():
 def b4():
     print("Alvaro es el sender")
     global sender_ip
-    sender_ip = "192.168.192.xxx"
+    sender_ip = "192.168.192.234"
     
 def b6():
     print("Damian es el receiver")
@@ -50,7 +50,7 @@ def b7():
 def b8():
     print("Alvaro es el receiver")
     global receiver_ip
-    receiver_ip = "192.168.1.xxx"
+    receiver_ip = "192.168.1.234"
     
 def b9():
     print("Iniciando transmision...")
