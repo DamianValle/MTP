@@ -17,6 +17,7 @@ JOSE_IP = "192.168.192.9"
 ackd = False
 
 root = Tk()
+root.title("MTP Grupo C")
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
@@ -52,13 +53,19 @@ def b8():
     global receiver_ip
     receiver_ip = "192.168.192.234"
     
+    
 def b9():
     print("Iniciando transmision...")
+    
+    global button_tx
+    button_tx.destroy()
+    button_tx = Label(f14, image=img_yellow)
+    button_tx.pack()
 
     dest = (receiver_ip, UDP_PORT)
     sock.bind((sender_ip, UDP_PORT))
     
-    sock.settimeout(10)
+    sock.settimeout(4)
     
     for file in os.listdir(DATA_PATH):
 
@@ -88,13 +95,23 @@ def b9():
                 sock.sendto("EOF", dest)
                 
     print("Terminada transmision")
+    
+    
+    button_tx.destroy()
+    button_tx = Label(f14, image=img_green)
+    button_tx.pack()
 
             
 
 def b10():
     print("Iniciando recepcion...")
+    
+    global button_tx
+    button_tx.destroy()
+    button_tx = Label(f14, image=img_yellow)
+    button_tx.pack()
 
-    f = open('received_data/text.txt', 'w')
+    f = open('received_data/MTP-F20-SRI-C-RX.txt', 'w')
 
     dest = (sender_ip, UDP_PORT)
 
@@ -114,8 +131,24 @@ def b10():
         f.write(line)
 
     print("Recepcion terminada")
+    
+    button_tx.destroy()
+    button_tx = Label(f14, image=img_green)
+    button_tx.pack()
+
+def button_email(color):
+    global button_em
+    button_em.destroy()
+    if(color=="yellow"):
+        button_em = Label(f16, image=img_yellow)
+    elif(color=="green"):
+        button_em = Label(f16, image=img_green)
+    button_em.pack()
+    
 
 def b11():
+    
+    button_email("yellow")
 
     ffrom = "MTPgrupoC@gmail.com"
 
@@ -144,7 +177,7 @@ def b11():
     data.attach(MIMEText(body, 'plain'))
 
     filename = "text.txt"
-    attachment = open("received_data/text.txt", "rb")
+    attachment = open("received_data/MTP-F20-SRI-C-RX.txt", "rb")
     p = MIMEBase('application', 'octet-stream')
     p.set_payload((attachment).read())
     encoders.encode_base64(p)
@@ -158,8 +191,11 @@ def b11():
     s.sendmail(ffrom, to, text)
     s.quit()
     
-    print("Email enviado, autodestruyendo script")
-
+    print("Email enviado")
+    
+    button_email("green")
+    
+def b12():
     exit()
     
 
@@ -175,6 +211,11 @@ f8 = Frame(root, borderwidth=2, relief="ridge")
 f9 = Frame(root, borderwidth=2, relief="ridge")
 f10 = Frame(root, borderwidth=2, relief="ridge")
 f11 = Frame(root, borderwidth=2, relief="ridge")
+f12 = Frame(root, borderwidth=2, relief="ridge")
+f13 = Frame(root, borderwidth=2, relief="ridge")
+f14 = Frame(root, borderwidth=2, relief="ridge")
+f15 = Frame(root, borderwidth=2, relief="ridge")
+f16 = Frame(root, borderwidth=2, relief="ridge")
 
 f1.grid(column=0, row=0, sticky="nsew")
 f2.grid(column=1, row=0, sticky="nsew")
@@ -186,7 +227,12 @@ f7.grid(column=2, row=1, sticky="nsew")
 f8.grid(column=3, row=1, sticky="nsew")
 f9.grid(column=0, row=2, sticky="nsew", columnspan=2)
 f10.grid(column=2, row=2, sticky="nsew", columnspan=2)
-f11.grid(column=0, row=3, sticky="nsew", columnspan=4)
+f11.grid(column=0, row=3, sticky="nsew", columnspan=2)
+f12.grid(column=2, row=3, sticky="nsew", columnspan=2)
+f13.grid(column=4, row=1, sticky="nsew", columnspan=1)
+f14.grid(column=5, row=1, sticky="nsew", columnspan=2)
+f15.grid(column=4, row=2, sticky="nsew", columnspan=1)
+f16.grid(column=5, row=2, sticky="nsew", columnspan=2)
 
 label1 = Label(f1, text="sender address")
 button2 = Button(f2, text="Damian", command=b2)
@@ -198,7 +244,15 @@ button7 = Button(f7, text="Jose", command=b7)
 button8 = Button(f8, text="Alvaro", command=b8)
 button9 = Button(f9, text="Iniciar transmision", command=b9)
 button10 = Button(f10, text="Iniciar recepcion", command=b10)
-button11 = Button(f11, text="Enviar mail y cerrar", command=b11)
+button11 = Button(f11, text="Enviar mail", command=b11)
+button12 = Button(f12, text="Cerrar", command=b12)
+img_green = PhotoImage(file = "green.gif")
+img_yellow = PhotoImage(file = "yellow.gif")
+img_red = PhotoImage(file = "red.gif")
+frame13 = Label(f13, text="Estado transmision")
+button_tx = Label(f14, image=img_red)
+frame15 = Label(f15, text="Estado email")
+button_em = Label(f16, image=img_red)
 
 label1.pack()
 button2.pack()
@@ -211,5 +265,10 @@ button8.pack()
 button9.pack()
 button10.pack()
 button11.pack()
+button12.pack()
+frame13.pack()
+button_tx.pack()
+frame15.pack()
+button_em.pack()
 
 root.mainloop()
