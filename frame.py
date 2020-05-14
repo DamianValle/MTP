@@ -78,14 +78,14 @@ def b9():
 
                     sock.sendto(line, dest)
 
-                    print("Enviada linea: " + line)
+#                     print("Enviada linea: " + line)
                     
                     ackd=False
                     while not ackd:
                         try:
-                            print("Esperando ack")
+#                             print("Esperando ack")
                             ACK, address = sock.recvfrom(1024)
-                            print("Recibido ack: " + ACK)
+#                             print("Recibido ack: " + ACK)
                             ackd = True
                         except:
                             print("No ha llegado el ack, enviadndo de nuevo")
@@ -125,8 +125,6 @@ def b10():
 
         if(line == "EOF"):
             break
-
-        print("Received line: " + line)
 
         f.write(line)
 
@@ -176,7 +174,7 @@ def b11():
 
     data.attach(MIMEText(body, 'plain'))
 
-    filename = "text.txt"
+    filename = "MTP-F20-SRI-C-RX.txt"
     attachment = open("received_data/MTP-F20-SRI-C-RX.txt", "rb")
     p = MIMEBase('application', 'octet-stream')
     p.set_payload((attachment).read())
