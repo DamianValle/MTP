@@ -150,7 +150,7 @@ def b11():
 
     ffrom = "MTPgrupoC@gmail.com"
 
-    to = "damidoppler@gmail.com"
+    to = "carles.puente@upc.edu"
 
     data = MIMEMultipart()
 
@@ -164,11 +164,11 @@ def b11():
 
     # storing the subject 
 
-    data['Subject'] = "Archivo del SRI"
+    data['Subject'] = "MTP Team C Pretest"
 
     # string to store the body of the mail
 
-    body = "Aqui va el archivo de mtp profe espero que este bien :P"
+    body = "MTP Team C pretest 15 May 2020"
 
     # attach the body with the msg instance
 
