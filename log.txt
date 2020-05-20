@@ -1,0 +1,28 @@
+MTP Group C - TX log file
+
+[17/05/2020 16:25:11]Sender ip address: 	192.168.192.231
+[17/05/2020 16:25:11]Receiver ip address: 	192.168.192.9
+
+[17/05/2020 16:25:11]Found file to transmit: 	hola.txt
+
+[17/05/2020 16:25:11]Sent line: ey
+
+[17/05/2020 16:25:11]Waiting for ACK
+[17/05/2020 16:25:15]ACK timeout, sending again
+
+[17/05/2020 16:25:15]Sent line: quetal
+
+[17/05/2020 16:25:15]Waiting for ACK
+[17/05/2020 16:25:19]ACK timeout, sending again
+
+[17/05/2020 16:25:19]Sent line: bien y tu?
+
+[17/05/2020 16:25:19]Waiting for ACK
+[17/05/2020 16:25:23]ACK timeout, sending again
+
+[17/05/2020 16:25:23]Sent line: tambe
+
+[17/05/2020 16:25:23]Waiting for ACK
+[17/05/2020 16:25:27]ACK timeout, sending again
+
+[17/05/2020 16:25:27]End of transmission

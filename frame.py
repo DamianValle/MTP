@@ -9,6 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+from datetime import datetime
 
 UDP_PORT = 8008
 DATA_PATH = "data"
@@ -21,10 +22,17 @@ root.title("MTP Grupo C")
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+def get_date():
+    now = datetime.now()
+    date_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    return date_string
+    
+
 def b2():
     print("Damian es el sender")
     global sender_ip
     sender_ip = "192.168.192.231"
+    
 
 def b3():
     print("Jose es el sender")
@@ -53,8 +61,20 @@ def b8():
     global receiver_ip
     receiver_ip = "192.168.192.234"
     
+def writelog(line):
+    fw = open("log.txt", "a")
+    fw.write(line)
+    fw.close()
+    
     
 def b9():
+    global log
+    global soysender
+    soysender = True
+    log = []
+    
+    log.append("MTP Group C - TX log file\n")
+    
     print("Iniciando transmision...")
     
     global button_tx
@@ -67,10 +87,15 @@ def b9():
     
     sock.settimeout(4)
     
+    log.append("[" + get_date() + "]Sender ip address: \t" + sender_ip)
+    log.append("[" + get_date() + "]Receiver ip address: \t" + receiver_ip + "\n")
+    
     for file in os.listdir(DATA_PATH):
 
         print("Encontrado archivo: " + file)
-
+        
+        log.append("[" + get_date() + "]Found file to transmit: \t" + file + "\n")
+        
         if file.endswith(".txt"):
 
             with open("data/" + file, "r") as text_file:
@@ -78,33 +103,46 @@ def b9():
 
                     sock.sendto(line, dest)
 
-#                     print("Enviada linea: " + line)
+                    log.append("[" + get_date() + "]Sent line: " + line)
                     
                     ackd=False
                     while not ackd:
                         try:
-#                             print("Esperando ack")
+                            log.append("[" + get_date() + "]Waiting for ACK")
                             ACK, address = sock.recvfrom(1024)
-#                             print("Recibido ack: " + ACK)
+                            log.append("[" + get_date() + "]ACK received\n")
                             ackd = True
                         except:
-                            print("No ha llegado el ack, enviadndo de nuevo")
+                            print("No ha llegado el ack, enviando de nuevo")
+                            log.append("[" + get_date() + "]ACK timeout, sending again\n")
                             sock.sendto(line, dest)
-                            print("Enviado de nuevo")
                     
                 sock.sendto("EOF", dest)
                 
     print("Terminada transmision")
+    log.append("[" + get_date() + "]End of transmission")
+    
+    fw = open('log.txt', 'w')
+    for line in log:
+        fw.write(line + "\n")
+    fw.close()
     
     
     button_tx.destroy()
     button_tx = Label(f14, image=img_green)
     button_tx.pack()
+    
 
             
 
 def b10():
     print("Iniciando recepcion...")
+    global soysender
+    global log
+    log = []
+    soysender = False
+    
+    log.append("MTP Group C - RX log file\n")
     
     global button_tx
     button_tx.destroy()
@@ -116,19 +154,32 @@ def b10():
     dest = (sender_ip, UDP_PORT)
 
     sock.bind((receiver_ip, UDP_PORT))
+    
+    log.append("[" + get_date() + "]Sender ip address: \t" + sender_ip)
+    log.append("[" + get_date() + "]Receiver ip address: \t" + receiver_ip + "\n")
 
     while True:
 
         line, addr = sock.recvfrom(1024)
+        
+        log.append("[" + get_date() + "]Received line: " + line)
 
         sock.sendto("ha llegao to perfect nen", dest)
 
         if(line == "EOF"):
+            log.append("[" + get_date() + "]Received EOF")
             break
 
         f.write(line)
 
     print("Recepcion terminada")
+    
+    log.append("[" + get_date() + "]End of reception")
+    
+    fw = open('log.txt', 'w')
+    for line in log:
+        fw.write(line + "\n")
+    fw.close()
     
     button_tx.destroy()
     button_tx = Label(f14, image=img_green)
@@ -150,7 +201,7 @@ def b11():
 
     ffrom = "MTPgrupoC@gmail.com"
 
-    to = "carles.puente@upc.edu"
+    to = "damidoppler@gmail.com"
 
     data = MIMEMultipart()
 
@@ -164,11 +215,11 @@ def b11():
 
     # storing the subject 
 
-    data['Subject'] = "MTP Team C Pretest"
+    data['Subject'] = "MTP Team C"
 
     # string to store the body of the mail
 
-    body = "MTP Team C pretest 15 May 2020"
+    body = "MTP Team C"
 
     # attach the body with the msg instance
 
@@ -196,6 +247,57 @@ def b11():
 def b12():
     exit()
     
+def send_log():
+    global soysender
+    print("enviando log")
+
+    ffrom = "MTPgrupoC@gmail.com"
+
+    to = "damidoppler@gmail.com"
+
+    data = MIMEMultipart()
+
+    # storing the senders email address  
+
+    data['From'] = ffrom
+
+    # storing the receivers email address 
+
+    data['To'] = to
+
+    # storing the subject 
+    if(soysender):
+        data['Subject'] = "MTP Team C TX Log File"
+    else:
+        data['Subject'] = "MTP Team C RX Log File"
+
+    # string to store the body of the mail
+
+    body = "MTP Team C"
+
+    # attach the body with the msg instance
+
+    data.attach(MIMEText(body, 'plain'))
+
+    if(soysender):
+        filename = "TX-log-MTP-C.txt"
+    else:
+        filename = "RX-log-MTP-C.txt"
+    
+    attachment = open("log.txt", "rb")
+    p = MIMEBase('application', 'octet-stream')
+    p.set_payload((attachment).read())
+    encoders.encode_base64(p)
+    p.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+    data.attach(p)
+
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    s.starttls()
+    s.login(ffrom, "Mtpgrupoc")
+    text = data.as_string()
+    s.sendmail(ffrom, to, text)
+    s.quit()
+    
 
 
 f1 = Frame(root, borderwidth=2, relief="ridge")
@@ -214,6 +316,7 @@ f13 = Frame(root, borderwidth=2, relief="ridge")
 f14 = Frame(root, borderwidth=2, relief="ridge")
 f15 = Frame(root, borderwidth=2, relief="ridge")
 f16 = Frame(root, borderwidth=2, relief="ridge")
+f17 = Frame(root, borderwidth=2, relief="ridge")
 
 f1.grid(column=0, row=0, sticky="nsew")
 f2.grid(column=1, row=0, sticky="nsew")
@@ -226,11 +329,12 @@ f8.grid(column=3, row=1, sticky="nsew")
 f9.grid(column=0, row=2, sticky="nsew", columnspan=2)
 f10.grid(column=2, row=2, sticky="nsew", columnspan=2)
 f11.grid(column=0, row=3, sticky="nsew", columnspan=2)
-f12.grid(column=2, row=3, sticky="nsew", columnspan=2)
+f12.grid(column=3, row=3, sticky="nsew", columnspan=4)
 f13.grid(column=4, row=1, sticky="nsew", columnspan=1)
 f14.grid(column=5, row=1, sticky="nsew", columnspan=2)
 f15.grid(column=4, row=2, sticky="nsew", columnspan=1)
 f16.grid(column=5, row=2, sticky="nsew", columnspan=2)
+f17.grid(column=2, row=3, sticky="nsew", columnspan=2)
 
 label1 = Label(f1, text="sender address")
 button2 = Button(f2, text="Damian", command=b2)
@@ -251,6 +355,7 @@ frame13 = Label(f13, text="Estado transmision")
 button_tx = Label(f14, image=img_red)
 frame15 = Label(f15, text="Estado email")
 button_em = Label(f16, image=img_red)
+button_log = Button(f17, text="Enviar log", command=send_log)
 
 label1.pack()
 button2.pack()
@@ -268,5 +373,6 @@ frame13.pack()
 button_tx.pack()
 frame15.pack()
 button_em.pack()
+button_log.pack()
 
 root.mainloop()
