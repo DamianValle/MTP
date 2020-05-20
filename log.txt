@@ -1,28 +1,108 @@
-MTP Group C - TX log file
+MTP Group C - RX log file
 
-[17/05/2020 16:25:11]Sender ip address: 	192.168.192.231
-[17/05/2020 16:25:11]Receiver ip address: 	192.168.192.9
+[20/05/2020 17:39:47]Sender ip address: 	192.168.192.234
+[20/05/2020 17:39:47]Receiver ip address: 	192.168.192.231
 
-[17/05/2020 16:25:11]Found file to transmit: 	hola.txt
-
-[17/05/2020 16:25:11]Sent line: ey
-
-[17/05/2020 16:25:11]Waiting for ACK
-[17/05/2020 16:25:15]ACK timeout, sending again
-
-[17/05/2020 16:25:15]Sent line: quetal
-
-[17/05/2020 16:25:15]Waiting for ACK
-[17/05/2020 16:25:19]ACK timeout, sending again
-
-[17/05/2020 16:25:19]Sent line: bien y tu?
-
-[17/05/2020 16:25:19]Waiting for ACK
-[17/05/2020 16:25:23]ACK timeout, sending again
-
-[17/05/2020 16:25:23]Sent line: tambe
-
-[17/05/2020 16:25:23]Waiting for ACK
-[17/05/2020 16:25:27]ACK timeout, sending again
-
-[17/05/2020 16:25:27]End of transmission
+[20/05/2020 17:39:47]Received line
+[20/05/2020 17:39:48]Received line
+[20/05/2020 17:39:48]Received line
+[20/05/2020 17:39:48]Received line
+[20/05/2020 17:39:48]Received line
+[20/05/2020 17:39:49]Received line
+[20/05/2020 17:39:49]Received line
+[20/05/2020 17:39:49]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:50]Received line
+[20/05/2020 17:39:51]Received line
+[20/05/2020 17:39:51]Received line
+[20/05/2020 17:39:51]Received line
+[20/05/2020 17:39:51]Received line
+[20/05/2020 17:39:51]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:52]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:53]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:54]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:55]Received line
+[20/05/2020 17:39:56]Received line
+[20/05/2020 17:39:56]Received line
+[20/05/2020 17:39:56]Received line
+[20/05/2020 17:39:56]Received line
+[20/05/2020 17:39:56]Received line
+[20/05/2020 17:39:56]Received line
+[20/05/2020 17:39:57]Received line
+[20/05/2020 17:39:57]Received line
+[20/05/2020 17:39:57]Received line
+[20/05/2020 17:39:57]Received line
+[20/05/2020 17:39:57]Received line
+[20/05/2020 17:39:57]Received line
+[20/05/2020 17:39:58]Received line
+[20/05/2020 17:39:58]Received line
+[20/05/2020 17:39:58]Received line
+[20/05/2020 17:39:58]Received line
+[20/05/2020 17:39:58]Received line
+[20/05/2020 17:39:59]Received line
+[20/05/2020 17:39:59]Received line
+[20/05/2020 17:39:59]Received line
+[20/05/2020 17:39:59]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:00]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received line
+[20/05/2020 17:40:01]Received EOF
+[20/05/2020 17:40:01]End of reception

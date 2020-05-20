@@ -103,7 +103,7 @@ def b9():
 
                     sock.sendto(line, dest)
 
-                    log.append("[" + get_date() + "]Sent line: " + line)
+                    log.append("[" + get_date() + "]Sent line")
                     
                     ackd=False
                     while not ackd:
@@ -162,7 +162,7 @@ def b10():
 
         line, addr = sock.recvfrom(1024)
         
-        log.append("[" + get_date() + "]Received line: " + line)
+        log.append("[" + get_date() + "]Received line")
 
         sock.sendto("ha llegao to perfect nen", dest)
 
@@ -249,7 +249,7 @@ def b12():
     
 def send_log():
     global soysender
-    print("enviando log")
+    print("Enviando log...")
 
     ffrom = "MTPgrupoC@gmail.com"
 
@@ -262,7 +262,7 @@ def send_log():
     data['From'] = ffrom
 
     # storing the receivers email address 
-
+    
     data['To'] = to
 
     # storing the subject 
@@ -297,6 +297,8 @@ def send_log():
     text = data.as_string()
     s.sendmail(ffrom, to, text)
     s.quit()
+    
+    print("log enviado")
     
 
 
