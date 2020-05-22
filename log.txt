@@ -1,108 +1,408 @@
-MTP Group C - RX log file
+MTP Group C - TX log file
 
-[20/05/2020 17:39:47]Sender ip address: 	192.168.192.234
-[20/05/2020 17:39:47]Receiver ip address: 	192.168.192.231
+[22/05/2020 10:28:35]Sender ip address: 	192.168.192.231
+[22/05/2020 10:28:35]Receiver ip address: 	192.168.192.234
 
-[20/05/2020 17:39:47]Received line
-[20/05/2020 17:39:48]Received line
-[20/05/2020 17:39:48]Received line
-[20/05/2020 17:39:48]Received line
-[20/05/2020 17:39:48]Received line
-[20/05/2020 17:39:49]Received line
-[20/05/2020 17:39:49]Received line
-[20/05/2020 17:39:49]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:50]Received line
-[20/05/2020 17:39:51]Received line
-[20/05/2020 17:39:51]Received line
-[20/05/2020 17:39:51]Received line
-[20/05/2020 17:39:51]Received line
-[20/05/2020 17:39:51]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:52]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:53]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:54]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:55]Received line
-[20/05/2020 17:39:56]Received line
-[20/05/2020 17:39:56]Received line
-[20/05/2020 17:39:56]Received line
-[20/05/2020 17:39:56]Received line
-[20/05/2020 17:39:56]Received line
-[20/05/2020 17:39:56]Received line
-[20/05/2020 17:39:57]Received line
-[20/05/2020 17:39:57]Received line
-[20/05/2020 17:39:57]Received line
-[20/05/2020 17:39:57]Received line
-[20/05/2020 17:39:57]Received line
-[20/05/2020 17:39:57]Received line
-[20/05/2020 17:39:58]Received line
-[20/05/2020 17:39:58]Received line
-[20/05/2020 17:39:58]Received line
-[20/05/2020 17:39:58]Received line
-[20/05/2020 17:39:58]Received line
-[20/05/2020 17:39:59]Received line
-[20/05/2020 17:39:59]Received line
-[20/05/2020 17:39:59]Received line
-[20/05/2020 17:39:59]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:00]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received line
-[20/05/2020 17:40:01]Received EOF
-[20/05/2020 17:40:01]End of reception
+[22/05/2020 10:28:35]Found file to transmit: 	MTP-F20-SRI-C-RX.txt
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:35]ACK received
+
+[22/05/2020 10:28:35]Sent line
+[22/05/2020 10:28:35]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:36]ACK received
+
+[22/05/2020 10:28:36]Sent line
+[22/05/2020 10:28:36]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:37]ACK received
+
+[22/05/2020 10:28:37]Sent line
+[22/05/2020 10:28:37]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:38]ACK received
+
+[22/05/2020 10:28:38]Sent line
+[22/05/2020 10:28:38]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:39]ACK received
+
+[22/05/2020 10:28:39]Sent line
+[22/05/2020 10:28:39]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:40]ACK received
+
+[22/05/2020 10:28:40]Sent line
+[22/05/2020 10:28:40]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:41]ACK received
+
+[22/05/2020 10:28:41]Sent line
+[22/05/2020 10:28:41]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]Sent line
+[22/05/2020 10:28:42]Waiting for ACK
+[22/05/2020 10:28:42]ACK received
+
+[22/05/2020 10:28:42]End of transmission

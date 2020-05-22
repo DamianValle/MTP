@@ -201,7 +201,7 @@ def b11():
 
     ffrom = "MTPgrupoC@gmail.com"
 
-    to = "damidoppler@gmail.com"
+    to = "carles.puente@upc.edu"
 
     data = MIMEMultipart()
 
@@ -253,7 +253,7 @@ def send_log():
 
     ffrom = "MTPgrupoC@gmail.com"
 
-    to = "damidoppler@gmail.com"
+    to = "carles.puente@upc.edu"
 
     data = MIMEMultipart()
 
