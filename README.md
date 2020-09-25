@@ -6,6 +6,7 @@ Simple python script with GUI that transmits text files between machines located
 
 Sender puts textfile in `./data`
 Receiver gets textfile in `./received data`
+
 Run with 
 ```
 python frame.py
