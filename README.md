@@ -5,7 +5,7 @@ Simple python script with GUI that transmits text files between machines located
 ## Usage
 
 Sender puts textfile in `./data`
-Receiver gets textfile in `./received data`
+Receiver gets textfile in `./received_data`
 
 Run with 
 ```
